@@ -23,6 +23,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MainActivity_Texto"
+            android:exported="false" />
+        <activity
+            android:name=".TextExamplesActivity"
+            android:exported="false" />
 
 
         <meta-data

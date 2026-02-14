@@ -20,6 +20,7 @@ public class Pantalla_principal extends AppCompatActivity {
         setContentView(R.layout.activity_pantalla_principal);
         Btn_textos = findViewById(R.id.Pbtn_textos);
         Btn_botones = findViewById(R.id.Pbtn_botones);
+        Btn_widgets = findViewById(R.id.Pbtn_widgets);
 
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
@@ -34,6 +35,10 @@ public class Pantalla_principal extends AppCompatActivity {
         });
         Btn_botones.setOnClickListener(v -> {
             Intent intent=new Intent(this,MainActivity_Botones.class);
+            startActivity(intent);
+        });
+        Btn_widgets.setOnClickListener(v -> {
+            Intent intent=new Intent(this,MainActivity_Widgets.class);
             startActivity(intent);
         });
 

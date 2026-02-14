@@ -24,6 +24,18 @@
     <string name="salir">Salir</string>
     <string name="texto">Textos</string>
 
+    <string name="W1_titulo">Widgets</string>
+    <string name="W1_imageview">ImageView</string>
+    <string name="W1_webview">WebView</string>
+    <string name="W1_videoview">VideoView</string>
+    <string name="W1_calendar">CalendarView</string>
+    <string name="W1_textclock">TextClock</string>
+    <string name="W1_progressbar">ProgressBar</string>
+    <string name="W1_progressbarH">ProgressBar (Horizontal)</string>
+    <string name="W1_seekbar">SeekBar</string>
+    <string name="W1_seekbarD">SeekBar (Discrete)</string>
+    <string name="W1_regresar">Regresar</string>
+
 
 
 </resources>

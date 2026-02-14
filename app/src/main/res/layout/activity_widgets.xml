@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Widgets">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="WebViewLayout">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/W1_titulo"
+                android:textStyle="bold"
+                android:padding="25px"
+                android:paddingBottom="16dp"
+                android:textAlignment="center"
+                android:textSize="24sp"/>
+
+            <!-- Image View -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/W1_imageview"
+                android:gravity="left"
+                android:paddingBottom="16dp"
+                android:textSize="20sp"/>
+            <ImageView
+                android:id="@+id/Wimg_imagen"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:scaleType="center"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Web View -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/W1_webview"
+                android:gravity="left"
+                android:paddingBottom="16dp"
+                android:textSize="20sp"/>
+            <WebView
+                android:id="@+id/Wweb_contenido"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Video View -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/W1_videoview"
+                android:gravity="left"
+                android:paddingBottom="16dp"
+                android:textSize="20sp"/>
+            <VideoView
+                android:id="@+id/Wvid_video"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Calendar View -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/W1_calendar"
+                android:gravity="left"
+                android:paddingBottom="16dp"
+                android:textSize="20sp"/>
+            <CalendarView
+                android:id="@+id/Wcal_calendar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Text Clock -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/W1_textclock"
+                android:gravity="left"
+                android:paddingBottom="16dp"
+                android:textSize="20sp"/>
+            <TextClock
+                android:id="@+id/Wclk_reloj"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:format24Hour="HH:mm:ss"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:layout_marginBottom="24dp"/>
+
+            <!-- ProgressBar -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/W1_progressbar"
+                android:gravity="left"
+                android:paddingBottom="16dp"
+                android:textSize="20sp"/>
+            <ProgressBar
+                android:id="@+id/Wprog_normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:indeterminate="true"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="32dp"/>
+
+            <!-- ProgressBar (Horizontal) -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/W1_progressbarH"
+                android:gravity="left"
+                android:paddingBottom="16dp"
+                android:textSize="20sp"/>
+            <ProgressBar
+                android:id="@+id/Wprog_horizontal"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="60"
+                android:layout_marginBottom="24dp"/>
+
+            <!-- SeekBar -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/W1_seekbar"
+                android:gravity="left"
+                android:paddingBottom="16dp"
+                android:textSize="20sp"/>
+            <SeekBar
+                android:id="@+id/Wseek_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="30"
+                android:layout_marginBottom="24dp"/>
+
+            <!-- SeekBar (Discrete) -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/W1_seekbarD"
+                android:gravity="left"
+                android:paddingBottom="16dp"
+                android:textSize="20sp"/>
+            <SeekBar
+                android:id="@+id/Wseek_discrete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="50"
+                android:stepSize="10"
+                android:layout_marginBottom="32dp"/>
+
+            <!-- Regresar -->
+            <Button
+                android:id="@+id/Wbtn_regresar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/W1_regresar"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

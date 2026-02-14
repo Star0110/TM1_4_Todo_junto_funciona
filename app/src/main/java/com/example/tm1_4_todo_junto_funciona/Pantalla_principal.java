@@ -19,6 +19,8 @@ public class Pantalla_principal extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_pantalla_principal);
         Btn_textos = findViewById(R.id.Pbtn_textos);
+        Btn_botones = findViewById(R.id.Pbtn_botones);
+
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
@@ -30,6 +32,11 @@ public class Pantalla_principal extends AppCompatActivity {
             Intent intent=new Intent(this,MainActivity_Texto.class);
             startActivity(intent);
         });
+        Btn_botones.setOnClickListener(v -> {
+            Intent intent=new Intent(this,MainActivity_Botones.class);
+            startActivity(intent);
+        });
+
 
     }
 }

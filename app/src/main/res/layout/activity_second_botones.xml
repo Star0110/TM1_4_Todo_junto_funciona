@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/main"
+    android:background="#F5F5F5"
+    android:padding="16dp">
+
+    <!-- Header -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Segunda Actividad"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="#1976D2" />
+
+    <!-- Contenido -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Saludo -->
+            <TextView
+                android:id="@+id/txtWelcome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¡Hola, Usuario!"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="#1976D2"
+                android:gravity="center"
+                android:padding="16dp" />
+
+            <!-- Card principal -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:layout_marginTop="16dp"
+                android:elevation="4dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" Información Recibida"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#073042"
+                    android:paddingBottom="12dp" />
+
+                <TextView
+                    android:id="@+id/txtMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mensaje"
+                    android:textSize="16sp"
+                    android:textColor="#424242"
+                    android:paddingBottom="8dp" />
+
+                <TextView
+                    android:id="@+id/txtTimestamp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Timestamp"
+                    android:textSize="14sp"
+                    android:textColor="#666666"
+                    android:paddingBottom="8dp" />
+
+                <TextView
+                    android:id="@+id/txtCounterInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Contador"
+                    android:textSize="14sp"
+                    android:textColor="#FF6F00"
+                    android:textStyle="bold"
+                    android:paddingBottom="8dp" />
+
+                <TextView
+                    android:id="@+id/txtDifficulty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dificultad"
+                    android:textSize="14sp"
+                    android:textColor="#7B1FA2"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <!-- Información adicional -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#E3F2FD"
+                android:padding="16dp"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:id="@+id/txtInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Información"
+                    android:textSize="14sp"
+                    android:textColor="#424242"
+                    android:lineSpacingExtra="4dp" />
+
+            </LinearLayout>
+
+            <!-- Indicador de éxito -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="16dp"
+                android:layout_marginTop="16dp"
+                android:background="#C8E6C9">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Navegación exitosa con Intent"
+                    android:textSize="16sp"
+                    android:textColor="#2E7D32"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- Botón Material para regresar -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="← Regresar a MainActivity"
+        android:textSize="16sp"
+        android:padding="16dp"
+        app:icon="@android:drawable/ic_menu_revert"
+        app:iconGravity="start"
+        style="@style/Widget.Material3.Button"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    tools:context=".MainActivity_Botones"
+    android:background="#F5F5F5">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Título principal -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ejemplo 1: Botones con TOAST"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:padding="16dp"
+                android:background="#3DDC84" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Guía completa con ejemplos funcionales"
+                android:textSize="14sp"
+                android:textColor="#666666"
+                android:gravity="center"
+                android:paddingTop="8dp"
+                android:paddingBottom="16dp" />
+
+            <!-- ========== BUTTON ESTÁNDAR ========== -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1 BUTTON ESTÁNDAR"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#073042"
+                android:paddingTop="16dp"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="El botón básico de Android (android.widget.Button)"
+                android:textSize="13sp"
+                android:textColor="#666666"
+                android:paddingBottom="8dp" />
+
+            <Button
+                android:id="@+id/btnStandard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Button Estándar"
+                android:textSize="16sp"
+                android:padding="16dp"
+                android:backgroundTint="#3DDC84"
+                android:textColor="#FFFFFF" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/secondary"/>
+
+            <!-- ========== MATERIAL BUTTON ========== -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2 MATERIAL BUTTON"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#073042"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:text="Botones con Material Design Components (Recomendado)"
+                android:textColor="#666666"
+                android:textSize="20sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnMaterialFilled"
+                style="@style/Widget.Material3.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Material Button - Filled"
+                android:textColor="#161515"
+                android:textColorLink="#070707FF"
+                android:textSize="13sp"
+                app:cornerRadius="8dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnMaterialOutlined"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Material Button - Outlined"
+                android:textColor="#070707"
+                android:textSize="13sp"
+                app:cornerRadius="8dp"
+                app:strokeWidth="2dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnMaterialText"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Material Button - Text"
+                android:textColor="#161515"
+                android:textColorLink="#070707FF"
+                android:textSize="13sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnMaterialIcon"
+                style="@style/Widget.Material3.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Material Button con Icono"
+                android:textColor="#161515"
+                android:textColorLink="#161515"
+                android:textSize="13sp"
+                app:cornerRadius="8dp"
+                app:icon="@android:drawable/ic_dialog_info"
+                app:iconGravity="start" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/secondary"/>
+
+            <!-- ========== IMAGE BUTTON ========== -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3️ IMAGE BUTTON"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#073042"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Botón que muestra solo una imagen, sin texto"
+                android:textSize="13sp"
+                android:textColor="#666666"
+                android:paddingBottom="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="16dp"
+                android:background="#FFFFFF">
+
+                <ImageButton
+                    android:id="@+id/imgBtnHeart"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@android:drawable/btn_star_big_on"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Me gusta"
+                    android:layout_margin="8dp"
+                    android:scaleType="fitCenter"
+                    android:clickable="true"
+                    android:focusable="true"/>
+
+                <ImageButton
+                    android:id="@+id/imgBtnShare"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@android:drawable/ic_menu_share"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Compartir"
+                    android:layout_margin="8dp"
+                    android:scaleType="fitCenter"
+                    android:clickable="true"
+                    android:focusable="true"/>
+
+                <ImageButton
+                    android:id="@+id/imgBtnSettings"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@android:drawable/ic_menu_preferences"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Configuración"
+                    android:layout_margin="8dp"
+                    android:scaleType="fitCenter"
+                    android:clickable="true"
+                    android:focusable="true"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtImageButtonStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Presiona los iconos para interactuar"
+                android:textSize="14sp"
+                android:textColor="#666666"
+                android:gravity="center"
+                android:padding="8dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/secondary"/>
+
+            <!-- ========== FLOATING ACTION BUTTON ========== -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4 FLOATING ACTION BUTTON (FAB)"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#073042"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Botón circular flotante para la acción principal"
+                android:textSize="13sp"
+                android:textColor="#666666"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/txtFabStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FAB presionado 0 veces"
+                android:textSize="16sp"
+                android:textColor="#1976D2"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:padding="16dp"
+                android:background="#E3F2FD" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Los FABs aparecen flotando en la esquina inferior derecha"
+                android:textSize="12sp"
+                android:textColor="#666666"
+                android:gravity="center"
+                android:paddingTop="8dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/secondary"/>
+
+            <!-- ========== TOGGLE BUTTON ========== -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5️ TOGGLE BUTTON"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#073042"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Botón con dos estados: ON/OFF (encendido/apagado)"
+                android:textSize="13sp"
+                android:textColor="#666666"
+                android:paddingBottom="8dp" />
+
+            <ToggleButton
+                android:id="@+id/toggleBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textOn=" Notificaciones ON"
+                android:textOff=" Notificaciones OFF"
+                android:padding="16dp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/txtToggleStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Notificaciones DESACTIVADAS"
+                android:textSize="14sp"
+                android:textColor="#FF0000"
+                android:gravity="center"
+                android:padding="8dp"
+                android:background="#FFEBEE"
+                android:layout_marginBottom="16dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:id="@+id/toggleBtnWifi"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textOn="WiFi ON"
+                    android:textOff="WiFi OFF"
+                    android:layout_marginEnd="4dp" />
+
+                <ToggleButton
+                    android:id="@+id/toggleBtnBluetooth"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textOn="BT ON"
+                    android:textOff="BT OFF"
+                    android:layout_marginStart="4dp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/secondary"/>
+
+            <!-- ========== RADIO BUTTON ========== -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="6️ RADIO BUTTON"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#073042"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Selección única dentro de un grupo (solo una opción a la vez)"
+                android:textSize="13sp"
+                android:textColor="#666666"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Selecciona la dificultad del juego:"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#424242"
+                android:paddingBottom="8dp" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupDifficulty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:padding="16dp">
+
+                <RadioButton
+                    android:id="@+id/radioBtnEasy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Fácil - Principiantes"
+                    android:textSize="15sp"
+                    android:padding="8dp" />
+
+                <RadioButton
+                    android:id="@+id/radioBtnMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Medio - Jugadores promedio"
+                    android:textSize="15sp"
+                    android:padding="8dp" />
+
+                <RadioButton
+                    android:id="@+id/radioBtnHard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Difícil - Experiencia requerida"
+                    android:textSize="15sp"
+                    android:padding="8dp" />
+
+                <RadioButton
+                    android:id="@+id/radioBtnExpert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Experto - Solo para profesionales"
+                    android:textSize="15sp"
+                    android:padding="8dp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/txtRadioStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Selecciona una opción arriba"
+                android:textSize="14sp"
+                android:textColor="#7B1FA2"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:padding="12dp"
+                android:background="#F3E5F5"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/btnConfirmSelection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Confirmar Selección"
+                android:enabled="false"
+                android:backgroundTint="#7B1FA2"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Selecciona tu tema preferido:"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#424242"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#FFFFFF"
+                android:padding="16dp">
+
+                <RadioButton
+                    android:id="@+id/radioBtnLight"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Claro"
+                    android:textSize="13sp" />
+
+                <RadioButton
+                    android:id="@+id/radioBtnDark"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Oscuro"
+                    android:textSize="13sp" />
+
+                <RadioButton
+                    android:id="@+id/radioBtnAuto"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text=" Auto"
+                    android:textSize="13sp" />
+
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/secondary"/>
+            <!-- ========== EJEMPLO 2: CAMBIO DE COLOR ========== -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" EJEMPLO 2: Cambio de Color Dinámico"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#073042"
+                android:paddingBottom="8dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Modo Rojo Activado "
+                android:textSize="16sp"
+                android:padding="16dp"
+                android:textColor="#FFFFFF"
+                app:backgroundTint="#CC0000" />
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/secondary"/>
+            <!-- ========== EJEMPLO 3: CONTADOR ========== -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" EJEMPLO 3: Contador con Persistencia"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#073042"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/txtCounter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total de clicks: 0"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#FF6F00"
+                android:gravity="center"
+                android:padding="16dp"
+                android:background="#FFF3E0"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/btnCounter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Presionas: 0 veces"
+                android:textSize="16sp"
+                android:padding="16dp"
+                android:backgroundTint="#FF6F00"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/btnReset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Resetear Contador"
+                android:textSize="14sp"
+                android:padding="12dp"
+                android:backgroundTint="#666666"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center" />
+
+            <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/secondary"/>
+
+            <!-- ========== EJEMPLO 4: NAVEGACIÓN ========== -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" EJEMPLO 4: Navegación entre Activities"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#073042"
+                android:paddingBottom="8dp" />
+
+            <EditText
+                android:id="@+id/editUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ingresa tu nombre de usuario"
+                android:inputType="text"
+                android:padding="16dp"
+                android:background="#FFFFFF"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/btnNavigate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ir a Segunda Pantalla →"
+                android:textSize="16sp"
+                android:padding="16dp"
+                android:backgroundTint="#1976D2"
+                android:textColor="#FFFFFF" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/secondary"/>
+
+            <!-- ========== EJEMPLO 5: VALIDACIÓN ========== -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="EJEMPLO 5: Validación de Formulario"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#073042"
+                android:paddingBottom="8dp" />
+
+            <EditText
+                android:id="@+id/editEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email (debe contener @)"
+                android:inputType="textEmailAddress"
+                android:padding="16dp"
+                android:background="#FFFFFF"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/editPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contraseña (mínimo 6 caracteres)"
+                android:inputType="textPassword"
+                android:padding="16dp"
+                android:background="#FFFFFF"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/txtValidation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Complete el formulario"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:padding="8dp" />
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enviar Formulario"
+                android:textSize="16sp"
+                android:padding="16dp"
+                android:backgroundTint="#4CAF50"
+                android:textColor="@color/black" />
+
+            <!-- Espacio final -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="80dp" />
+
+            <Button
+                android:id="@+id/btnSalir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/salir"
+                android:textSize="16sp"
+                android:padding="16dp"
+                android:backgroundTint="#4CAF50"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- Floating Action Buttons -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        app:srcCompat="@android:drawable/ic_input_add"
+        android:contentDescription="Agregar" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabMini"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="88dp"
+        app:srcCompat="@android:drawable/ic_menu_edit"
+        app:fabSize="mini"
+        android:contentDescription="Editar" />
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

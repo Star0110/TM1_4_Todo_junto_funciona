@@ -7,4 +7,183 @@
     android:layout_height="match_parent"
     tools:context=".Pantalla_principal">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="40dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:text="@string/objetos"
+                android:textSize="30sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#00BCD4" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"/>
+
+            <Button
+                android:id="@+id/Pbtn_textos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/secondary"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:text="@string/texto"
+                android:textSize="18sp"
+                android:textColor="@color/black"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"/>
+
+            <Button
+                android:id="@+id/Pbtn_botones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/primary"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:text="@string/botones"
+                android:textSize="18sp"
+                android:textColor="@color/black"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"/>
+
+            <Button
+                android:id="@+id/Pbtn_widgets"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/secondary"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:text="@string/widget"
+                android:textSize="18sp"
+                android:textColor="@color/black"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"/>
+
+            <Button
+                android:id="@+id/Pbtn_layouts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/primary"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:text="@string/layout"
+                android:textSize="18sp"
+                android:textColor="@color/black"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"/>
+
+            <Button
+                android:id="@+id/Pbtn_containers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/secondary"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:text="@string/containers"
+                android:textSize="18sp"
+                android:textColor="@color/black"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"/>
+
+            <Button
+                android:id="@+id/Pbtn_helpers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/primary"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:text="@string/helpers"
+                android:textSize="18sp"
+                android:textColor="@color/black"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"/>
+
+            <Button
+                android:id="@+id/Pbtn_google"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/secondary"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:text="@string/google"
+                android:textSize="18sp"
+                android:textColor="@color/black"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"/>
+
+            <Button
+                android:id="@+id/Pbtn_legacy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/primary"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:text="@string/legacy"
+                android:textSize="18sp"
+                android:textColor="@color/black"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"/>
+
+            <Button
+                android:id="@+id/Pbtn_acerca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/secondary"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:text="@string/acerca"
+                android:textSize="18sp"
+                android:textColor="@color/black"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"/>
+
+            <Button
+                android:id="@+id/Pbtn_salir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/primary"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:text="@string/salir"
+                android:textSize="18sp"
+                android:textColor="@color/black"/>
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

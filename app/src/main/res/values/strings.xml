@@ -11,4 +11,19 @@
     <string name="contrasenia">Contraseña</string>
     <string name="acceder">Acceder</string>
     <string name="cerrar">Cerrar</string>
+    <string name="objetos">Objetos Android</string>
+
+    <string name="botones">Botones</string>
+    <string name="widget">Widgets</string>
+    <string name="layout">Layouts</string>
+    <string name="containers">Containers</string>
+    <string name="helpers">Helpers</string>
+    <string name="google">Google</string>
+    <string name="legacy">Legacy</string>
+    <string name="acerca">Acerca de</string>
+    <string name="salir">Salir</string>
+    <string name="texto">Textos</string>
+
+
+
 </resources>

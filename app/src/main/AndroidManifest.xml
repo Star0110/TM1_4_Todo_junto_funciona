@@ -16,6 +16,15 @@
             android:name=".Pantalla_principal"
             android:exported="false" />
         <activity
+            android:name=".GoogleModuleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LegacyModuleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AboutActivity"
+            android:exported="false" />
+        <activity
             android:name=".Login"
             android:exported="true"
             android:theme="@style/Theme.TM1_4_Todo_junto_funciona">
@@ -104,6 +113,12 @@
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/admob_app_id" />
     </application>
 
 </manifest>

@@ -23,7 +23,14 @@
     <string name="legacy">Legacy</string>
     <string name="acerca">Acerca de</string>
     <string name="salir">Salir</string>
+    <string name="volver">Volver</string>
     <string name="texto">Textos</string>
+    <string name="about_body">Aplicación demo del curso TM1. Incluye ejemplos de controles, layouts, containers y componentes Material. Integrantes: Equipo Botones.</string>
+    <string name="google_module_title">Módulo Google (Paleta)</string>
+    <string name="google_module_subtitle">Demo con elementos de la paleta Google: MapView y AdView.</string>
+    <string name="admob_app_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="admob_banner_test_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="google_maps_key">YOUR_MAPS_API_KEY</string>
 
     <string name="W1_titulo">Widgets</string>
     <string name="W1_imageview">ImageView</string>

@@ -1,8 +1,16 @@
 package com.example.tm1_4_todo_junto_funciona;
 
-import androidx.core.view.GravityCompat;
+import android.os.Bundle;
+import android.widget.Toolbar;
 
-public class DrawerExampleActivity {
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
+
+import com.google.android.material.navigation.NavigationView;
+
+public class DrawerExampleActivity extends AppCompatActivity {
     private DrawerLayout drawer;
 
     @Override

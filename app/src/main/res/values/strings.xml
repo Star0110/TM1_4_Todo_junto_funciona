@@ -24,6 +24,8 @@
     <string name="salir">Salir</string>
     <string name="texto">Textos</string>
 
+    <string name="open_drawer">Abrir menú</string>
+    <string name="close_drawer">Cerrar menú</string>
 
 
 </resources>

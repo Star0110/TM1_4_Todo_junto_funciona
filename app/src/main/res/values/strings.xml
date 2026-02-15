@@ -13,7 +13,8 @@
     <string name="cerrar">Cerrar</string>
     <string name="objetos">Objetos Android</string>
 
-    <string name="botones">Botones</string>
+    <string name="botones1">Botones 1</string>
+    <string name="botones2">Botones 2</string>
     <string name="widget">Widgets</string>
     <string name="layout">Layouts</string>
     <string name="containers">Containers</string>

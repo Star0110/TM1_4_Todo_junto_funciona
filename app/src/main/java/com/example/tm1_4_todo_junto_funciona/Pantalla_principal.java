@@ -12,7 +12,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class Pantalla_principal extends AppCompatActivity {
 
-    Button Btn_textos, Btn_botones, Btn_botones2, Btn_widgets, Btn_layouts, Btn_containers, Btn_helpers, Btn_google, Btn_legacy;
+    Button Btn_textos, Btn_botones, Btn_botones2, Btn_widgets, Btn_layouts, Btn_containers, Btn_helpers, Btn_google, Btn_legacy, Btn_salir;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,10 +24,9 @@ public class Pantalla_principal extends AppCompatActivity {
         Btn_widgets = findViewById(R.id.Pbtn_widgets);
         Btn_layouts=findViewById(R.id.Pbtn_layouts);
         Btn_helpers=findViewById(R.id.Pbtn_helpers);
-
-
-
         Btn_containers=findViewById(R.id.Pbtn_containers);
+        Btn_salir=findViewById(R.id.Pbtn_salir);
+
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
@@ -65,6 +64,9 @@ public class Pantalla_principal extends AppCompatActivity {
         Btn_containers.setOnClickListener(v -> {
             Intent intent=new Intent(this,MainActivity_Containers.class);
             startActivity(intent);
+        });
+        Btn_salir.setOnClickListener(v -> {
+            finishAffinity();
         });
 
 

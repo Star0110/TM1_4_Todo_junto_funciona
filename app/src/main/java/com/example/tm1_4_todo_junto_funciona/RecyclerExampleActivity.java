@@ -21,7 +21,8 @@ public class RecyclerExampleActivity extends AppCompatActivity {
 
         List<MainActivity_Containers.ExampleItem> items = new ArrayList<>();
         for (int i = 1; i <= 30; i++) {
-            items.add(new MainActivity_Containers("Elemento " + i, "Item con CardView", ConstraintExampleActivity.class));
+            // Cambio realizado aquí: .ExampleItem
+            items.add(new MainActivity_Containers.ExampleItem("Elemento " + i, "Item con CardView", ConstraintExampleActivity.class));
         }
 
         com.example.tm1_4_todo_junto_funciona.MenuAdapter adapter = new MenuAdapter(items, item ->

@@ -1,0 +1,75 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="32dp">
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/imageFilter"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:src="@drawable/sample_image"
+        app:round="18dp"
+        app:saturation="1.0"
+        app:contrast="1.0"
+        app:brightness="1.0"
+        app:warmth="1.0"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- ImageFilterButton: alterna crossfade entre dos imágenes -->
+    <androidx.constraintlayout.utils.widget.ImageFilterButton
+        android:id="@+id/btnFilter"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:src="@drawable/sample_image"
+        app:altSrc="@drawable/sample_image"
+        app:crossfade="0.0"
+        android:scaleType="centerCrop"
+        android:text="Cambiar"
+        app:layout_constraintTop_toBottomOf="@id/imageFilter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/tvSaturation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saturación"
+        app:layout_constraintTop_toBottomOf="@id/btnFilter"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <SeekBar
+        android:id="@+id/seekSaturation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:max="200"
+        android:progress="100"
+        app:layout_constraintTop_toBottomOf="@id/tvSaturation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvContrast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contraste"
+        app:layout_constraintTop_toBottomOf="@id/seekSaturation"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="12dp"/>
+
+    <SeekBar
+        android:id="@+id/seekContrast"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:max="200"
+        android:progress="100"
+        app:layout_constraintTop_toBottomOf="@id/tvContrast"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,41 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="32dp">
+
+    <TextView
+        android:id="@+id/tvFlowTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Flow: wrap automático en filas/columnas"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flow"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:flow_wrapMode="chain"
+        app:flow_horizontalGap="8dp"
+        app:flow_verticalGap="8dp"
+        app:flow_maxElementsWrap="3"
+        app:constraint_referenced_ids="btn1,btn2,btn3,btn4,btn5,btn6,btn7,btn8"
+        app:layout_constraintTop_toBottomOf="@id/tvFlowTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <Button android:id="@+id/btn1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Opción 1"/>
+    <Button android:id="@+id/btn2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Opción 2"/>
+    <Button android:id="@+id/btn3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Opción 3"/>
+    <Button android:id="@+id/btn4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Opción 4"/>
+    <Button android:id="@+id/btn5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Opción 5"/>
+    <Button android:id="@+id/btn6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Opción 6"/>
+    <Button android:id="@+id/btn7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Opción 7"/>
+    <Button android:id="@+id/btn8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Opción 8"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

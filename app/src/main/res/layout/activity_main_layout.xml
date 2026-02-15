@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:background="#2C3E50"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LAYOUTS"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"/>
+
+        <Button android:id="@+id/btnLinear" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Linear" android:textSize="12sp" />
+        <Button android:id="@+id/btnRelative" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Relative" android:textSize="12sp" />
+        <Button android:id="@+id/btnTable" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Table" android:textSize="12sp" />
+        <Button android:id="@+id/btnFrame" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Frame" android:textSize="12sp" />
+        <Button android:id="@+id/btnConstraint" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Constraint" android:textSize="12sp" />
+        <Button android:id="@+id/btnSalir" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Salir"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+</LinearLayout>

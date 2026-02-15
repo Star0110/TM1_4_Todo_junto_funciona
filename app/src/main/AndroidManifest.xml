@@ -44,6 +44,33 @@
         <activity android:name=".Widgets"
             android:exported="false" />
 
+        <activity android:name=".MainActivity_botones2"
+            android:exported="false" />
+
+        <activity android:name=".MainActivity_layout"
+            android:exported="false" />
+
+        <activity android:name=".MainActivity_helpers"
+            android:exported="false" />
+
+        <activity android:name=".BarrierActivity"
+            android:exported="false" />
+
+        <activity android:name=".FlowActivity"
+            android:exported="false" />
+        <activity android:name=".GuidelineActivity"
+            android:exported="false" />
+        <activity android:name=".LayerActivity"
+            android:exported="false" />
+        <activity android:name=".ImageFilterActivity"
+            android:exported="false" />
+        <activity android:name=".GroupActivity"
+            android:exported="false" />
+        <activity android:name=".MockViewActivity"
+            android:exported="false" />
+
+
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

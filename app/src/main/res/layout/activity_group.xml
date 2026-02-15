@@ -1,0 +1,54 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="32dp">
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/groupCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="ivG,tvG1,tvG2"/>
+
+    <ImageView
+        android:id="@+id/ivG"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:src="@drawable/sample_image"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvG1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Group controla visibilidad de varios views"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@id/ivG"
+        app:layout_constraintStart_toEndOf="@id/ivG"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="12dp"/>
+
+    <TextView
+        android:id="@+id/tvG2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Un solo switch oculta/muestra todo el bloque."
+        app:layout_constraintTop_toBottomOf="@id/tvG1"
+        app:layout_constraintStart_toStartOf="@id/tvG1"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/btnToggleGroup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Ocultar/Mostrar grupo"
+        app:layout_constraintTop_toBottomOf="@id/ivG"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

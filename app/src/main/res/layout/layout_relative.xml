@@ -1,0 +1,15 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="#F1F8E9">
+
+    <TextView android:id="@+id/titulo" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:text="RelativeLayout" android:textSize="20sp"/>
+
+    <Button android:id="@+id/btnCentro" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:text="Centro" android:layout_centerInParent="true"/>
+
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="Arriba de Centro" android:layout_above="@id/btnCentro" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

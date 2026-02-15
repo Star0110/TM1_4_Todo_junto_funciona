@@ -42,6 +42,30 @@
             android:name=".ConstraintExampleActivity"
             android:exported="false" />
 
+        <activity
+            android:name=".ScrollExampleActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".RecyclerExampleActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".DrawerExampleActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".FragmentHostActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".CoordinatorExampleActivity"
+            android:exported="false" />
+
+        <activity android:name=".MainActivity_Containers"
+            android:exported="false" />
+
+
 
         <meta-data
             android:name="preloaded_fonts"

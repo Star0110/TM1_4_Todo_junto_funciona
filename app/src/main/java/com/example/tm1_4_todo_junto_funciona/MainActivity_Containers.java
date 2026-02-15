@@ -2,6 +2,7 @@ package com.example.tm1_4_todo_junto_funciona;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -14,7 +15,7 @@ import java.util.List;
 
 public class MainActivity_Containers extends AppCompatActivity{
 
-
+    Button btnSalir;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,7 +23,7 @@ public class MainActivity_Containers extends AppCompatActivity{
 
         RecyclerView recycler = findViewById(R.id.recyclerMenu);
         recycler.setLayoutManager(new LinearLayoutManager(this));
-
+        btnSalir = findViewById(R.id.btnSalir);
         List<ExampleItem> items = new ArrayList<>();
         items.add(new ExampleItem("ConstraintLayout", "Alineación con constraints", ConstraintExampleActivity.class));
         items.add(new ExampleItem("ScrollView", "Formulario largo con scroll", ScrollExampleActivity.class));
@@ -37,6 +38,10 @@ public class MainActivity_Containers extends AppCompatActivity{
         });
 
         recycler.setAdapter(adapter);
+        btnSalir.setOnClickListener(v -> {
+            startActivity(new Intent(this, Pantalla_principal.class));
+            finishAffinity();
+        });
     }
 
     public static class ExampleItem {

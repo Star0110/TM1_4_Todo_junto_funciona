@@ -32,4 +32,5 @@ public class SimpleTextFragment extends Fragment {
         t.setText(text);
         return v;
 
+    }
 }

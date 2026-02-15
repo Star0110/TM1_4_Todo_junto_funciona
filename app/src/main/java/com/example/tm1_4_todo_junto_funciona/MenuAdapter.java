@@ -11,8 +11,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 
 public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.VH> {
-    //private final List<com.example.objetosjava.MainActivity.ExampleItem> data;
-    //private final com.example.objetosjava.MainActivity.OnExampleClick click;
+    private final List<com.example.tm1_4_todo_junto_funciona.MainActivity_Containers.ExampleItem> data;
+    private final com.example.tm1_4_todo_junto_funciona.MainActivity_Containers.OnExampleClick click;
 
     public MenuAdapter(List< com.example.tm1_4_todo_junto_funciona.MainActivity_Containers.ExampleItem> data, com.example.tm1_4_todo_junto_funciona.MainActivity_Containers.OnExampleClick click ){
         this.data = data;

@@ -3,14 +3,16 @@ package com.example.tm1_4_todo_junto_funciona;
 import android.os.Bundle;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class RecyclerExampleActivity {
-    @Override protected void onCreate(Bundle savedInstanceState) {
+public class RecyclerExampleActivity extends AppCompatActivity {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recycler_example);
 

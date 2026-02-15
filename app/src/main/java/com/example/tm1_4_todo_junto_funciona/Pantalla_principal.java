@@ -27,6 +27,7 @@ public class Pantalla_principal extends AppCompatActivity {
 
 
 
+        Btn_containers=findViewById(R.id.Pbtn_containers);
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
@@ -61,6 +62,10 @@ public class Pantalla_principal extends AppCompatActivity {
         });
 
 
+        Btn_containers.setOnClickListener(v -> {
+            Intent intent=new Intent(this,MainActivity_Containers.class);
+            startActivity(intent);
+        });
 
 
     }

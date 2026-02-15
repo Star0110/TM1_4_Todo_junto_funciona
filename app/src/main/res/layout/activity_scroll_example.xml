@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Formulario (ScrollView)"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/edtNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre"/>
+
+        <EditText
+            android:id="@+id/edtCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Correo"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Teléfono"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Dirección"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ciudad"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Estado"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Código postal"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Notas (opcional)"/>
+
+        <Button
+            android:id="@+id/btnEnviar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enviar"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:text="Tip: ScrollView solo puede tener 1 hijo directo (aquí, LinearLayout)."/>
+
+    </LinearLayout>
+</ScrollView>

@@ -13,8 +13,7 @@
     <string name="cerrar">Cerrar</string>
     <string name="objetos">Objetos Android</string>
 
-    <string name="botones1">Botones 1</string>
-    <string name="botones2">Botones 2</string>
+    <string name="botones">Botones</string>
     <string name="widget">Widgets</string>
     <string name="layout">Layouts</string>
     <string name="containers">Containers</string>
@@ -37,6 +36,8 @@
     <string name="W1_seekbarD">SeekBar (Discrete)</string>
     <string name="W1_regresar">Regresar</string>
 
+    <string name="open_drawer">Abrir menú</string>
+    <string name="close_drawer">Cerrar menú</string>
 
 
 </resources>

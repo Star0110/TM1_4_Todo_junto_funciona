@@ -1,10 +1,10 @@
 package com.example.tm1_4_todo_junto_funciona;
 
 import android.os.Bundle;
-import android.widget.Toolbar;
 
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
@@ -56,12 +56,12 @@ public class DrawerExampleActivity extends AppCompatActivity {
         });
     }
 
-    @Override
-    public void onBackPressed() {
+
+    public void onBackPressedDispatcher() {
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
-            super.onBackPressed();
+            super.getOnBackPressedDispatcher();
         }
     }
 }
